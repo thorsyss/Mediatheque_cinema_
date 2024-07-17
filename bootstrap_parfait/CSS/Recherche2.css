@@ -1,0 +1,85 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #e6e6e6;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Darcy.jpg') center center;
+    background-size: cover;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jumbotron h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color:#343a40;
+    text-align: center;
+    margin: 20px;
+}
+  
+  
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: auto;
+    height: 500px; /* ou toute autre hauteur fixe désirée */
+}
+
+
+.rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}

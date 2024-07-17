@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Film</title>
+    <link rel="stylesheet" href="CSS/ajout.css">
+</head>
+<body>
+    
+    <!--contenu principal de la page -->
+    <!-- label utiliser pour associer une identification  a un champ de saisi -->
+    <!-- code repeter pour tout les champ a remplire pour ajouter des films-->
+    <main class="container mt-4">
+        <h2>Ajouter un nouveau film</h2>
+        <a class="navbar-brand" href="Acceuil.html">Cinéma Darcy</a>
+        <form action="PHP/ajout.php" method="POST">
+            <div class="form-group">
+                <label for="id_film">ID Film</label>
+                <input type="number" class="form-control" id="id_film" name="id_film" required>
+            </div>
+            <div class="form-group">
+                <label for="titre">Titre</label>
+                <input type="text" class="form-control" id="titre" name="titre" maxlength="50" required>
+            </div>
+            <div class="form-group">
+                <label for="annee">Année</label>
+                <input type="number" class="form-control" id="annee" name="annee" required>
+            </div>
+            <div class="form-group">
+                <label for="id_realisateur">ID Réalisateur</label>
+                <input type="number" class="form-control" id="id_realisateur" name="id_realisateur" required>
+            </div>
+            <div class="form-group">
+                <label for="id_genre">ID Genre</label>
+                <input type="number" class="form-control" id="id_genre" name="id_genre" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Résumé</label>
+                <textarea class="form-control" id="resume" name="resume" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="id_code_pays">ID Code Pays</label>
+                <input type="text" class="form-control" id="id_code_pays" name="id_code_pays" maxlength="4" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter le Film</button>
+        </form>
+    </main>
+</body>
+</html>

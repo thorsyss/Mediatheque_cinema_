@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéma Darcy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Recherche2.css">    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cinéma Darcy</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acceuil.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulaire.html">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Enrichissement.html">Enrichissements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recommandation de Film</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suppresion.html">Suppression</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Bienvenue au Cinéma Darcy</h1>
+    </div>
+
+    <div class="container">
+        <h2>Quel film allez-vous regarder ?</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="GET" action="PHP/Recherche2.php">
+                    <div class="form-group">
+                        <select class="form-control" id="table" name="table">
+                            <option value="notations">Notations</option>
+                            <option value="films">Films</option>
+                            <option value="artistes">Artistes</option>
+                            <option value="genres">Genres</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Rechercher un film" name="recherche" aria-label="Rechercher un film" aria-describedby="button-addon2">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Dreyfuss.jpg" class="card-img-top" alt="Film 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 1</h5>
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/affiche-les-bronzes-font-du-ski.jpg" class="card-img-top" alt="Film 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 2</h5>
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ledernierjaguar.jpg" class="card-img-top" alt="Film 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 3</h5>
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Cinéma Darcy 2024. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
